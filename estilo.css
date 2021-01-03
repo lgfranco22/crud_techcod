@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+label, input{
+    display: block;
+    line-height: 30px;
+    height: 30px;
+    outline: none;
+    font-size: 13pt;
+    width: 100%;
+}
+
+form{
+    width: 330px;
+    background-color: rgba(0,0,0,.2);
+    padding: 20px;
+    margin: 30px auto;
+}
+
+input[type="submit"]{
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#esquerda{
+    width: 35%;
+    height: 500px;
+    float: left;
+}
+
+h2{
+    text-align: center;
+}
+
+#direita{
+    width: 65%;
+    height: 500px;
+    float: left;
+}
+
+table{
+    background-color: rgba(0, 0, 0, .2);
+    width: 90%;
+    margin: 30px auto;
+}
+
+tr{
+    line-height: 30px;
+}
+
+tr#titulo{
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, .6);
+    color: white;
+    text-transform: uppercase;
+}
+
+td{
+    padding: 0 5px;
+}
+
+a{
+    background-color: white;
+    color: black;
+    padding: 5px;
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+.aviso{
+    width: 90%;
+    height: 50px;
+    margin: 30px auto 0 auto;
+}
+img{
+    width: 50px;
+    padding-right: 15px;
+    display: block;
+    float: left;
+}
+h4{
+    float: left;
+    line-height: 50px;
+}
+@media only screen and (max-width:1220px){
+	@media only screen and (max-width:1220px){
+	#esquerda{
+		clear:both;
+		width: 50%;
+		height: 340px;
+	}
+	#direita{
+		clear:both;
+		width: 100%;
+	}
+}
