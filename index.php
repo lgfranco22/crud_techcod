@@ -24,8 +24,8 @@ $p = new Pessoa("techcod","localhost","root","root");
         {
             $id_upd = addslashes($_GET['id_up']);
             $nome = addslashes(htmlspecialchars($_POST['nome']));
-            $telefone = addslashes($_POST['telefone']);
-            $email = addslashes($_POST['email']);
+            $telefone = addslashes(htmlspecialchars($_POST['telefone']));
+            $email = addslashes(htmlspecialchars($_POST['email']));
             if(!empty($nome) && !empty($telefone) && !empty($email))
             {
                 $p->atualizarDados($id_upd, $nome ,$telefone ,$email);
@@ -45,8 +45,8 @@ $p = new Pessoa("techcod","localhost","root","root");
         else
         {
             $nome = addslashes(htmlspecialchars ($_POST['nome']));
-            $telefone = addslashes($_POST['telefone']);
-            $email = addslashes($_POST['email']);
+            $telefone = addslashes(htmlspecialchars($_POST['telefone']));
+            $email = addslashes(htmlspecialchars($_POST['email']));
             if(!empty($nome) && !empty($telefone) && !empty($email))
             {
                 if(!$p->cadastrarPessoa($nome ,$telefone ,$email))
